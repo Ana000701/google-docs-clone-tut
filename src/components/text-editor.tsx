@@ -67,7 +67,7 @@ function Editor() {
           isLocalChange.current = true; // Mark change as local
           setIsEditing(true);
           saveContent();
-
+          console.log(delta, oldDelta);
           // Reset editing state after 5 seconds of inactivity
           setTimeout(() => setIsEditing(false), 5000);
         }
